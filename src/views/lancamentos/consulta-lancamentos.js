@@ -53,7 +53,7 @@ class ConsultaLancamentos extends React.Component {
                 }
                 this.setState({ lancamentos: lista });
             }).catch(error => {
-                console.log(error);
+                messages.mensagemErro("Erro ao buscar lançamentos.")
             });
     }
 

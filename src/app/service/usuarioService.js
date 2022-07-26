@@ -23,7 +23,6 @@ class UsuarioService extends ApiService {
     validar(usuario) {
         const erros = [];
 
-        console.log('passei aqui')
 
         if (!usuario.nome) {
             erros.push('O campo Nome é obrigatório.')
